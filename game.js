@@ -153,7 +153,6 @@ function handleKeyPress(letter, button) {
     } else {
         // Wrong Guess
         wrongGuesses++
-        console.log('wrong guesses:' ,wrongGuesses)
         hangmanImg.src = `images/hangman${wrongGuesses}.png`
         checkLoss()
     }

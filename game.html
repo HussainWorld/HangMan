@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script defer src="game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+          <button id="questionMark-btn">
+            <img src="images/questionMark.png" alt="Question Mark img">
+          </button>
+            <div class="category">
+                <span>Category: </span><span id="category">N/A</span>
+            </div>
+            <button class="pause-button">
+              <div class="pause-icon">
+                <div class="pause-bar"></div>
+                <div class="pause-bar"></div>
+              </div>
+            </button>
+        </div>
+        
+        
+
+
+        
+
+        <div class="game-area">
+            <div class="hangman">
+
+              <div id="scoreDiv" class="score">
+                <span>🏆</span> <span id="score">0</span>
+              </div>
+                <img id="hangman-img" src="images/hangman1.png" alt="Hangman Image">
+            </div>
+            <div class="word-display">
+                <p id="word-blanks">_ _ _ _ _</p>
+            </div>
+        </div>
+
+        <div class="keyboard">
+            <div class="keys">
+                
+                <button>Q</button>
+                <button>W</button>
+                <button>E</button>
+                <button>R</button>
+                <button>T</button>
+                <button>Y</button>
+                <button>U</button>
+                <button>I</button>
+                <button>O</button>
+                <button>P</button>
+            </div>
+            <div class="keys">
+                
+                <button>A</button>
+                <button>S</button>
+                <button>D</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+            </div>
+            <div class="keys">
+                
+                <button>Z</button>
+                <button>X</button>
+                <button>C</button>
+                <button>V</button>
+                <button>B</button>
+                <button>N</button>
+                <button>M</button>
+            </div>
+        </div>
+    </div>
+
+<div id="winLose-div" class="hidden">
+  <button id="winLoseMenuCloseBtn" class="close-btn">×</button>
+  <div class="popup-content">
+      <p id="winLoseMessage">You win!!</p>
+  </div>
+</div>
+
+<div id="howToPlay-div" class="hidden">
+  <button id="howToPlayCloseBtn" class="close-btn">×</button>
+  <div class="popup-content">
+    <p>Hangman is a word-guessing game where the player tries to guess a hidden word within a given category (e.g., “Fruits” or “Animals”). The word is represented by blank spaces, each corresponding to a letter. Correct guesses reveal the letters in the word, while incorrect guesses count toward your 6 attempts. Win by guessing the word before running out of tries, or lose if you reach 6 wrong guesses.</p>
+  </div>
+</div>
+
+<div id="pause-menu" class="popup hidden">
+  <div class="popup-content">
+    <button id="puseMenuCloseBtn" class="close-btn">×</button>
+    <h2>Paused</h2>
+    <div class="puseMenu-buttons">
+      <button id="home-button" class="popup-btn">🏠 Home</button>
+      <button id="restart-button" class="popup-btn">🔄 Restart</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

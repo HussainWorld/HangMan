@@ -14,6 +14,11 @@ Features
 	•	How-to-Play Instructions: A popup explaining the game rules.
 	•	Responsive Design: Works across various screen sizes.
 
+
+Deployment Link
+
+[Play Hangman Game](https://hussainworld.github.io/HangMan/)
+
   Technologies Used
 
 	•	HTML: Structure of the game.
@@ -98,12 +103,13 @@ function saveScore(score) {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 Future Enhancements
 
 	•	Additional Levels: Add difficulty levels with varying word lengths and attempts.
 	•	Multiplayer Mode: Allow two players to compete.
 	•	Hint Feature: Provide optional hints for each word.
+	•	Background Music: Add a sound feature with adjustable background music.
+	•	2-Player Mode: Enable one player to set a word for another player to guess.
 
 
 Contributing
